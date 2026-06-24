@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>MI STREAMING - Descargas</title>
+    <meta name="description" content="Descarga las mejores aplicaciones de IPTV. Entretenimiento sin límites.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS Integrado -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <style>
+        body { font-family: 'Outfit', 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#0b0f19] text-white min-h-screen relative overflow-x-hidden flex flex-col justify-between">
+
+    <!-- Efectos de Luces de Fondo (Glows de la página original) -->
+    <div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-[20%] right-[-10%] w-[45vw] h-[45vw] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- HEADER / HERO -->
+    <header class="py-12 px-4 relative z-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            
+            <!-- Columna Izquierda (Características) -->
+            <div class="space-y-4 order-2 md:order-1">
+                <div class="bg-[#131926]/80 p-5 rounded-2xl border border-slate-800/60 text-center hover:border-purple-500/30 transition-all duration-300">
+                    <i class="fa-solid fa-film text-3xl text-purple-400 mb-2"></i>
+                    <h3 class="text-lg font-bold tracking-wider">PELÍCULAS</h3>
+                    <p class="text-xs text-slate-400 font-semibold tracking-widest mt-1">ESTRENOS</p>
+                </div>
+                <div class="bg-[#131926]/80 p-5 rounded-2xl border border-slate-800/60 text-center hover:border-purple-500/30 transition-all duration-300">
+                    <i class="fa-solid fa-clapperboard text-3xl text-purple-400 mb-2"></i>
+                    <h3 class="text-lg font-bold tracking-wider">SERIES</h3>
+                    <p class="text-xs text-slate-400 font-semibold tracking-widest mt-1">COMPLETAS</p>
+                </div>
+                <div class="bg-[#131926]/80 p-5 rounded-2xl border border-slate-800/60 text-center hover:border-purple-500/30 transition-all duration-300">
+                    <i class="fa-solid fa-satellite-dish text-3xl text-purple-400 mb-2"></i>
+                    <h3 class="text-lg font-bold tracking-wider">EN VIVO</h3>
+                    <p class="text-xs text-slate-400 font-semibold tracking-widest mt-1">CANALES</p>
+                </div>
+            </div>
+
+         
+            <div class="text-center order-1 md:order-2 flex flex-col items-center">
+                <div class="max-w-[320px] rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/10 border border-slate-800 mb-6 bg-[#131926]">
+                    <!-- CAMBIA ESTO: Tu logotipo o imagen central -->
+                    <img src="https://placehold.co/800x400/111/fff?text=TU+LOGOTIPO+AQUI" alt="Logo Streaming" class="w-full h-auto object-cover">
+                </div>
+               
+                <p class="text-sm font-black tracking-[0.3em] text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 uppercase">Tu Mejor Opción en Streaming</p>
+            </div>
+
+            <!-- Columna Derecha (Características) -->
+            <div class="space-y-4 order-3">
+                <div class="bg-[#131926]/80 p-5 rounded-2xl border border-slate-800/60 text-center hover:border-blue-500/30 transition-all duration-300">
+                    <i class="fa-solid fa-futbol text-3xl text-blue-400 mb-2"></i>
+                    <h3 class="text-lg font-bold tracking-wider">DEPORTES</h3>
+                    <p class="text-xs text-slate-400 font-semibold tracking-widest mt-1">EN VIVO</p>
+                </div>
+                <div class="bg-[#131926]/80 p-5 rounded-2xl border border-slate-800/60 text-center hover:border-blue-500/30 transition-all duration-300">
+                    <i class="fa-solid fa-shield-halved text-3xl text-blue-400 mb-2"></i>
+                    <h3 class="text-lg font-bold tracking-wider">100% SEGURO</h3>
+                    <p class="text-xs text-slate-400 font-semibold tracking-widest mt-1">Y CONFIABLE</p>
+                </div>
+                <div class="bg-[#131926]/80 p-5 rounded-2xl border border-slate-800/60 text-center hover:border-blue-500/30 transition-all duration-300">
+                    <i class="fa-solid fa-headset text-3xl text-blue-400 mb-2"></i>
+                    <h3 class="text-lg font-bold tracking-wider">SOPORTE</h3>
+                    <p class="text-xs text-slate-400 font-semibold tracking-widest mt-1">PERSONALIZADO</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE DESCARGAS -->
+    <main class="max-w-6xl mx-auto px-4 py-8 relative z-10 w-full flex-grow">
+        
+        <h2 class="text-2xl md:text-3xl font-black text-center mb-12 tracking-tight">Descarga Nuestras Aplicaciones</h2>
+        
+        <!-- Rejilla de Tarjetas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Tarjeta Windows -->
+            <div class="bg-[#131926]/90 rounded-3xl overflow-hidden border border-slate-800/80 flex flex-col justify-between hover:-translate-y-1 transition-all duration-300 shadow-xl">
+                <div class="p-4 bg-gradient-to-b from-blue-500/10 to-transparent relative group min-h-[160px] flex items-center justify-center">
+                    <img src="https://placehold.co/600x337/111/fff?text=App+PC" class="rounded-xl max-h-[120px] object-contain" alt="PC App">
+                    <i class="fa-brands fa-windows absolute bottom-3 right-4 text-3xl text-blue-400/80"></i>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                      
+                        <h3 class="text-xl font-bold mb-1">Jr Ibo Player</h3>
+                        <span class="inline-block text-[10px] font-bold bg-blue-500/20 text-blue-400 px-2.5 py-0.5 rounded-full mb-3 uppercase tracking-wider">Para PC / Windows</span>
+                       
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">La mejor experiencia de streaming adaptada para tu computadora. Rápido, estable y en alta definición.</p>
+                    </div>
+                   
+                    <a href="https://www.mediafire.com/file/l0lo2jlms6lewad/setup.exe/file" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-4 rounded-xl transition duration-300 text-sm shadow-lg shadow-blue-600/20">
+                        <i class="fa-solid fa-download mr-1.5"></i> Descargar Ahora
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tarjeta Android -->
+            <div class="bg-[#131926]/90 rounded-3xl overflow-hidden border border-slate-800/80 flex flex-col justify-between hover:-translate-y-1 transition-all duration-300 shadow-xl">
+                <div class="p-4 bg-gradient-to-b from-green-500/10 to-transparent relative group min-h-[160px] flex items-center justify-center">
+                    <img src="https://placehold.co/300x500/111/fff?text=App+Android" class="rounded-xl max-h-[120px] object-contain" alt="Android App">
+                    <i class="fa-brands fa-android absolute bottom-3 right-4 text-3xl text-green-400/80"></i>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                       
+                        <h3 class="text-xl font-bold mb-1">JRS TV DIGITAL</h3>
+                        <span class="inline-block text-[10px] font-bold bg-green-500/20 text-green-400 px-2.5 py-0.5 rounded-full mb-3 uppercase tracking-wider">Para Android</span>
+                    
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">Lleva el entretenimiento en tu bolsillo. Películas, series y TV en vivo directamente en tu celular o TV Box.</p>
+                    </div>
+                   
+                    <a href="https://www.mediafire.com/file/kg6we0sl4lg951x/VLIX.apk/file" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-4 rounded-xl transition duration-300 text-sm shadow-lg shadow-green-600/20">
+                        <i class="fa-solid fa-download mr-1.5"></i> Descargar Ahora
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tarjeta iOS -->
+            <div class="bg-[#131926]/90 rounded-3xl overflow-hidden border border-slate-800/80 flex flex-col justify-between hover:-translate-y-1 transition-all duration-300 shadow-xl">
+                <div class="p-4 bg-gradient-to-b from-slate-400/10 to-transparent relative group min-h-[160px] flex items-center justify-center">
+                    <img src="https://placehold.co/300x500/1a1a2e/fff?text=App+iOS" class="rounded-xl max-h-[120px] object-contain" alt="iOS App">
+                    <i class="fa-brands fa-apple absolute bottom-3 right-4 text-3xl text-slate-300/80"></i>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <!-- CAMBIA ESTO -->
+                        <h3 class="text-xl font-bold mb-1">IPTV Smarters</h3>
+                        <span class="inline-block text-[10px] font-bold bg-slate-500/20 text-slate-300 px-2.5 py-0.5 rounded-full mb-3 uppercase tracking-wider">Para iPhone / iPad</span>
+                        <!-- CAMBIA ESTO -->
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">Disfruta de todo el contenido en tu iPhone o iPad. Descárgala gratis desde la App Store de Apple.</p>
+                    </div>
+             
+                    <a href="https://apps.apple.com/us/app/smarters-player-lite/id1628995509" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-4 rounded-xl transition duration-300 text-sm shadow-lg">
+                        <i class="fa-brands fa-apple mr-1.5"></i> App Store
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tarjeta Downloader -->
+            <div class="bg-[#131926]/90 rounded-3xl overflow-hidden border border-slate-800/80 flex flex-col justify-between hover:-translate-y-1 transition-all duration-300 shadow-xl">
+                <div class="p-4 bg-gradient-to-b from-orange-500/10 to-transparent relative group min-h-[160px] flex items-center justify-center">
+                    <img src="https://placehold.co/600x337/ff8c00/fff?text=Downloader" class="rounded-xl max-h-[120px] object-contain" alt="Downloader App">
+                    <i class="fa-solid fa-tv absolute bottom-3 right-4 text-2xl text-orange-400/80"></i>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                    
+                        <h3 class="text-xl font-bold mb-1">App Downloader</h3>
+                        <span class="inline-block text-[10px] font-bold bg-orange-500/20 text-orange-400 px-2.5 py-0.5 rounded-full mb-3 uppercase tracking-wider">Para Smart TV / TV Box</span>
+                        
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">Instala nuestra aplicación fácilmente usando la app Downloader. Solo ingresa el siguiente código en la sección Home:</p>
+                    </div>
+                   
+                    <div class="bg-orange-500/10 border border-orange-500/30 text-orange-400 text-center font-bold py-3 px-4 rounded-xl text-sm tracking-wide select-all">
+                        Código: <span class="font-extrabold text-white ml-1">9675340</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Banner Inferior -->
+        <section class="mt-16 text-center border-t border-slate-800/60 pt-12 max-w-2xl mx-auto">
+           
+            <h2 class="text-2xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">ENTRETENIMIENTO SIN LÍMITES</h2>
+            <p class="text-slate-500 text-xs font-bold tracking-[0.4em] mt-2">CALIDAD • VARIEDAD • CONFIANZA</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="p-6 text-center text-xs text-slate-600 bg-[#070a12] border-t border-slate-900 mt-12 relative z-10">
+        <!-- CAMBIA ESTO -->
+        <p>&copy; 2026 JR TV Streaming. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
