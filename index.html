@@ -28,6 +28,7 @@
     <!-- Efectos de Luces de Fondo (Glows de la página original) -->
     <div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
     <div class="absolute top-[20%] right-[-10%] w-[45vw] h-[45vw] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-[60%] left-[-10%] w-[40vw] h-[40vw] bg-cyan-600/5 rounded-full blur-[120px] pointer-events-none"></div>
 
     <!-- HEADER / HERO -->
     <header class="py-12 px-4 relative z-10">
@@ -55,7 +56,6 @@
          
             <div class="text-center order-1 md:order-2 flex flex-col items-center">
                 <div class="max-w-[1000px] rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/10 border border-slate-800 mb-6 bg-[#131926]">
-                    <!-- CORREGIDO: quitamos assets/ -->
                     <img src="hero-image.png" alt="Logo Streaming" class="w-full h-auto object-cover">
                 </div>
                
@@ -84,6 +84,15 @@
         </div>
     </header>
 
+    <!-- SECCIÓN MULTIPANTALLA / ESTRENOS (NUEVA) -->
+    <section class="max-w-5xl mx-auto px-4 py-8 relative z-10 text-center">
+        <h2 class="text-2xl md:text-3xl font-black mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 uppercase">¡Experiencia Multipantalla VLYX!</h2>
+        <div class="rounded-3xl overflow-hidden border border-cyan-500/30 shadow-2xl shadow-cyan-500/5 bg-[#131926]/60 p-2">
+            <!-- Aquí se muestra la imagen multipantalla correspondiente a WhatsApp Image 2026-06-29 at 2.35.11 PM.jpeg -->
+            <img src="WhatsApp Image 2026-06-29 at 2.35.11 PM.jpeg" alt="Experiencia Multipantalla Vlyx" class="w-full h-auto rounded-2xl">
+        </div>
+    </section>
+
     <!-- SECCIÓN DE DESCARGAS -->
     <main class="max-w-6xl mx-auto px-4 py-8 relative z-10 w-full flex-grow">
         
@@ -95,19 +104,15 @@
             <!-- Tarjeta Windows -->
             <div class="bg-[#131926]/90 rounded-3xl overflow-hidden border border-slate-800/80 flex flex-col justify-between hover:-translate-y-1 transition-all duration-300 shadow-xl">
                 <div class="p-4 bg-gradient-to-b from-blue-500/10 to-transparent relative group min-h-[160px] flex items-center justify-center">
-                    <!-- CORREGIDO: quitamos assets/ y añadimos la extensión .png faltante -->
                     <img src="app-pc.png" class="rounded-xl max-h-[120px] object-contain" alt="PC App">
                     <i class="fa-brands fa-windows absolute bottom-3 right-4 text-3xl text-blue-400/80"></i>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
-                      
                         <h3 class="text-xl font-bold mb-1">Jr Ibo Player</h3>
                         <span class="inline-block text-[10px] font-bold bg-blue-500/20 text-blue-400 px-2.5 py-0.5 rounded-full mb-3 uppercase tracking-wider">Para PC / Windows</span>
-                       
                         <p class="text-slate-400 text-xs leading-relaxed mb-6">La mejor experiencia de streaming adaptada para tu computadora. Rápido, estable y en alta definición.</p>
                     </div>
-                   
                     <a href="https://www.mediafire.com/file/l0lo2jlms6lewad/setup.exe/file" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-4 rounded-xl transition duration-300 text-sm shadow-lg shadow-blue-600/20">
                         <i class="fa-solid fa-download mr-1.5"></i> Descargar Ahora
                     </a>
@@ -117,19 +122,15 @@
             <!-- Tarjeta Android -->
             <div class="bg-[#131926]/90 rounded-3xl overflow-hidden border border-slate-800/80 flex flex-col justify-between hover:-translate-y-1 transition-all duration-300 shadow-xl">
                 <div class="p-4 bg-gradient-to-b from-green-500/10 to-transparent relative group min-h-[160px] flex items-center justify-center">
-                    <!-- CORREGIDO: quitamos assets/ -->
                     <img src="app-android.png" class="rounded-xl max-h-[120px] object-contain" alt="Android App">
                     <i class="fa-brands fa-android absolute bottom-3 right-4 text-3xl text-green-400/80"></i>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
-                       
                         <h3 class="text-xl font-bold mb-1">JRS TV DIGITAL</h3>
                         <span class="inline-block text-[10px] font-bold bg-green-500/20 text-green-400 px-2.5 py-0.5 rounded-full mb-3 uppercase tracking-wider">Para Android</span>
-                    
                         <p class="text-slate-400 text-xs leading-relaxed mb-6">Lleva el entretenimiento en tu bolsillo. Películas, series y TV en vivo directamente en tu celular o TV Box.</p>
                     </div>
-                   
                     <a href="https://www.mediafire.com/file/kg6we0sl4lg951x/VLIX.apk/file" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-4 rounded-xl transition duration-300 text-sm shadow-lg shadow-green-600/20">
                         <i class="fa-solid fa-download mr-1.5"></i> Descargar Ahora
                     </a>
@@ -139,19 +140,15 @@
             <!-- Tarjeta iOS -->
             <div class="bg-[#131926]/90 rounded-3xl overflow-hidden border border-slate-800/80 flex flex-col justify-between hover:-translate-y-1 transition-all duration-300 shadow-xl">
                 <div class="p-4 bg-gradient-to-b from-slate-400/10 to-transparent relative group min-h-[160px] flex items-center justify-center">
-                    <!-- CORREGIDO: quitamos assets/ -->
                     <img src="app-ios.png" class="rounded-xl max-h-[120px] object-contain" alt="iOS App">
                     <i class="fa-brands fa-apple absolute bottom-3 right-4 text-3xl text-slate-300/80"></i>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
-                        
                         <h3 class="text-xl font-bold mb-1">IPTV Smarters</h3>
                         <span class="inline-block text-[10px] font-bold bg-slate-500/20 text-slate-300 px-2.5 py-0.5 rounded-full mb-3 uppercase tracking-wider">Para iPhone / iPad</span>
-                        
                         <p class="text-slate-400 text-xs leading-relaxed mb-6">Disfruta de todo el contenido en tu iPhone o iPad. Descárgala gratis desde la App Store de Apple.</p>
                     </div>
-             
                     <a href="https://apps.apple.com/us/app/smarters-player-lite/id1628995509" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-4 rounded-xl transition duration-300 text-sm shadow-lg">
                         <i class="fa-brands fa-apple mr-1.5"></i> App Store
                     </a>
@@ -161,19 +158,15 @@
             <!-- Tarjeta Downloader -->
             <div class="bg-[#131926]/90 rounded-3xl overflow-hidden border border-slate-800/80 flex flex-col justify-between hover:-translate-y-1 transition-all duration-300 shadow-xl">
                 <div class="p-4 bg-gradient-to-b from-orange-500/10 to-transparent relative group min-h-[160px] flex items-center justify-center">
-                    <!-- CORREGIDO: quitamos las comillas dobles repetidas y el assets/ -->
                     <img src="app-downloader.png" class="rounded-xl max-h-[120px] object-contain" alt="Downloader App">
                     <i class="fa-solid fa-tv absolute bottom-3 right-4 text-2xl text-orange-400/80"></i>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
-                    
                         <h3 class="text-xl font-bold mb-1">App Downloader</h3>
                         <span class="inline-block text-[10px] font-bold bg-orange-500/20 text-orange-400 px-2.5 py-0.5 rounded-full mb-3 uppercase tracking-wider">Para Smart TV / TV Box</span>
-                        
                         <p class="text-slate-400 text-xs leading-relaxed mb-4">Instala nuestra aplicación fácilmente usando la app Downloader. Solo ingresa el siguiente código en la sección Home:</p>
                     </div>
-                   
                     <div class="bg-orange-500/10 border border-orange-500/30 text-orange-400 text-center font-bold py-3 px-4 rounded-xl text-sm tracking-wide select-all">
                         Código: <span class="font-extrabold text-white ml-1">9675340</span>
                     </div>
@@ -182,9 +175,131 @@
 
         </div>
 
+        <!-- OPCIÓN 1: SECCIÓN DE PASOS (NUEVA) -->
+        <section class="mt-20 max-w-5xl mx-auto border-t border-slate-800/60 pt-16">
+            <h2 class="text-2xl md:text-3xl font-black text-center mb-10 tracking-tight">Disfruta de Todo el Entretenimiento en 3 Simples Pasos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#131926]/60 p-6 rounded-2xl border border-slate-800/80 relative hover:border-cyan-500/20 transition-all duration-300">
+                    <div class="w-12 h-12 bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center text-xl font-black mb-4 border border-cyan-500/20">1</div>
+                    <h3 class="text-lg font-bold mb-2 text-cyan-400">📱 Descarga tu Aplicación</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Elige e instala la aplicación ideal para tu dispositivo (<strong>Roku</strong>, Smart TV, Celular, TV Box o PC) desde la sección de descargas de arriba.</p>
+                </div>
+                <div class="bg-[#131926]/60 p-6 rounded-2xl border border-slate-800/80 relative hover:border-purple-500/20 transition-all duration-300">
+                    <div class="w-12 h-12 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center text-xl font-black mb-4 border border-purple-500/20">2</div>
+                    <h3 class="text-lg font-bold mb-2 text-purple-400">💬 Solicita tus Accesos</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Haz clic en nuestro botón de WhatsApp. Te activaremos una <strong>Demo Gratuita</strong> o el plan de tu preferencia en minutos. ¡Sin contratos!</p>
+                </div>
+                <div class="bg-[#131926]/60 p-6 rounded-2xl border border-slate-800/80 relative hover:border-blue-500/20 transition-all duration-300">
+                    <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-xl font-black mb-4 border border-blue-500/20">3</div>
+                    <h3 class="text-lg font-bold mb-2 text-blue-400">🍿 ¡Conéctate y Disfruta!</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Ingresa las credenciales que te enviaremos y accede al instante al mejor contenido de películas, series y deportes en vivo sin trabas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPCIÓN 2: TABLA DE PLANES Y PRECIOS (NUEVA) -->
+        <section class="mt-20 max-w-5xl mx-auto border-t border-slate-800/60 pt-16">
+            <h2 class="text-2xl md:text-3xl font-black text-center mb-10 tracking-tight">Elige el Plan Ideal para Ti</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <!-- Plan Bronce -->
+                <div class="bg-[#131926]/70 rounded-3xl p-6 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all duration-300">
+                    <div>
+                        <div class="text-center pb-4 border-b border-slate-800">
+                            <span class="text-xs font-bold uppercase tracking-widest text-slate-400">🥉 Plan Bronce</span>
+                            <h3 class="text-xl font-black mt-1 text-white">1 Mes de Acceso</h3>
+                            <p class="text-xs text-slate-500 italic mt-1">Disfruta 1 mes completo</p>
+                        </div>
+                        <ul class="py-6 space-y-3 text-xs text-slate-300">
+                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i> + De 10,000 Películas y Series</li>
+                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i> Canales En Vivo y Deportes</li>
+                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i> Estrenos en Alta Definición</li>
+                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i> Compatible con todos tus dispositivos</li>
+                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i> Soporte Técnico Mensual</li>
+                        </ul>
+                    </div>
+                    <div class="text-center pt-4 border-t border-slate-800">
+                        <div class="text-2xl font-black text-white mb-4">$150 <span class="text-xs font-normal text-slate-400">MXN</span></div>
+                        <a href="https://wa.me/52XXXXXXXXXX?text=%C2%A1Hola%21+Vi+la+p%C3%A1gina+web+de+Vlyx+y+me+interesa+activar+mi+servicio+de+streaming.+%C2%BFMe+dan+m%C3%A1s+informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="block w-full bg-slate-800 hover:bg-slate-700 font-bold py-2.5 rounded-xl text-xs transition duration-300">Contratar Plan</a>
+                    </div>
+                </div>
+
+                <!-- Plan Plata -->
+                <div class="bg-[#131926]/70 rounded-3xl p-6 border border-purple-500/30 flex flex-col justify-between hover:border-purple-500/50 transition-all duration-300 relative shadow-xl shadow-purple-500/5">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-purple-600 text-white font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full shadow">Especial</div>
+                    <div>
+                        <div class="text-center pb-4 border-b border-slate-800">
+                            <span class="text-xs font-bold uppercase tracking-widest text-purple-400">🥈 Plan Plata</span>
+                            <h3 class="text-xl font-black mt-1 text-white">6 Meses + 1 REGALO</h3>
+                            <p class="text-xs text-purple-400 font-bold mt-1">¡Te llevas 7 meses en total!</p>
+                        </div>
+                        <ul class="py-6 space-y-3 text-xs text-slate-300">
+                            <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> + De 10,000 Películas y Series</li>
+                            <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> Canales En Vivo y Deportes</li>
+                            <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> Estrenos en Alta Definición</li>
+                            <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> Compatible con todos tus dispositivos</li>
+                            <li><i class="fa-solid fa-check text-purple-400 mr-2"></i> Soporte Técnico Mensual</li>
+                        </ul>
+                    </div>
+                    <div class="text-center pt-4 border-t border-slate-800">
+                        <div class="text-2xl font-black text-purple-400 mb-4">$800 <span class="text-xs font-normal text-slate-400">MXN</span></div>
+                        <a href="https://wa.me/52XXXXXXXXXX?text=%C2%A1Hola%21+Vi+la+p%C3%A1gina+web+de+Vlyx+y+me+interesa+activar+mi+servicio+de+streaming.+%C2%BFMe+dan+m%C3%A1s+informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="block w-full bg-purple-600 hover:bg-purple-500 font-bold py-2.5 rounded-xl text-xs transition duration-300">Contratar Plan</a>
+                    </div>
+                </div>
+
+                <!-- Plan Oro -->
+                <div class="bg-[#1a1f33]/80 rounded-3xl p-6 border-2 border-cyan-500 flex flex-col justify-between transition-all duration-300 relative shadow-2xl shadow-cyan-500/10">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-cyan-500 text-slate-950 font-black text-[10px] uppercase tracking-widest px-4 py-1 rounded-full shadow">Super Promoción</div>
+                    <div>
+                        <div class="text-center pb-4 border-b border-slate-700">
+                            <span class="text-xs font-bold uppercase tracking-widest text-cyan-400">🥇 Plan Oro</span>
+                            <h3 class="text-xl font-black mt-1 text-white">12 Meses + 2 REGALO</h3>
+                            <p class="text-xs text-cyan-400 font-bold mt-1">¡Te llevas 14 meses en total!</p>
+                        </div>
+                        <ul class="py-6 space-y-3 text-xs text-slate-200">
+                            <li><i class="fa-solid fa-star text-cyan-400 mr-2"></i> + De 10,000 Películas y Series</li>
+                            <li><i class="fa-solid fa-star text-cyan-400 mr-2"></i> Canales En Vivo y Deportes</li>
+                            <li><i class="fa-solid fa-star text-cyan-400 mr-2"></i> Estrenos en Alta Definición</li>
+                            <li><i class="fa-solid fa-star text-cyan-400 mr-2"></i> Compatible con todos tus dispositivos</li>
+                            <li><i class="fa-solid fa-star text-cyan-400 mr-2"></i> Soporte Premium Prioritario</li>
+                        </ul>
+                    </div>
+                    <div class="text-center pt-4 border-t border-slate-700">
+                        <div class="text-2xl font-black text-cyan-400 mb-4">$1,300 <span class="text-xs font-normal text-slate-400">MXN</span></div>
+                        <a href="https://wa.me/52XXXXXXXXXX?text=%C2%A1Hola%21+Vi+la+p%C3%A1gina+web+de+Vlyx+y+me+interesa+activar+mi+servicio+de+streaming.+%C2%BFMe+dan+m%C3%A1s+informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="block w-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-black py-2.5 rounded-xl text-xs transition duration-300 shadow-lg shadow-cyan-500/20">Contratar Plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPCIÓN 3: PREGUNTAS FRECUENTES (NUEVA) -->
+        <section class="mt-20 max-w-3xl mx-auto border-t border-slate-800/60 pt-16">
+            <h2 class="text-2xl md:text-3xl font-black text-center mb-10 tracking-tight">Preguntas Frecuentes</h2>
+            <div class="space-y-4">
+                <div class="bg-[#131926]/60 p-5 rounded-2xl border border-slate-800/80">
+                    <h3 class="text-sm font-bold text-cyan-400 mb-1.5"><i class="fa-solid fa-circle-question mr-2"></i> ¿En qué dispositivos puedo ver el servicio?</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Es 100% compatible con <strong>Roku</strong>, Smart TVs (Samsung, LG, Hisense, etc.), dispositivos Android e iOS (celulares y tablets), TV Boxes, Fire Stick y computadoras.</p>
+                </div>
+                <div class="bg-[#131926]/60 p-5 rounded-2xl border border-slate-800/80">
+                    <h3 class="text-sm font-bold text-cyan-400 mb-1.5"><i class="fa-solid fa-circle-question mr-2"></i> ¿Cómo recibo mis accesos después de pagar?</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Una vez realizado tu pago, nos envías el comprobante por WhatsApp y en menos de 5 minutos te generamos tus credenciales de usuario y contraseña junto con la guía de activación rápida.</p>
+                </div>
+                <div class="bg-[#131926]/60 p-5 rounded-2xl border border-slate-800/80">
+                    <h3 class="text-sm font-bold text-cyan-400 mb-1.5"><i class="fa-solid fa-circle-question mr-2"></i> ¿Cuántas pantallas puedo conectar al mismo tiempo?</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Puedes disfrutar del servicio hasta en <strong>3 dispositivos en simultáneo</strong> dentro de tu hogar, ideal para que nadie en la familia se pierda su contenido favorito.</p>
+                </div>
+                <div class="bg-[#131926]/60 p-5 rounded-2xl border border-slate-800/80">
+                    <h3 class="text-sm font-bold text-cyan-400 mb-1.5"><i class="fa-solid fa-circle-question mr-2"></i> ¿Qué velocidad de internet necesito?</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Para disfrutar del contenido en alta definición (HD y 4K) de manera fluida, te recomendamos contar con una conexión estable de al menos <strong>10 Mbps</strong>.</p>
+                </div>
+                <div class="bg-[#131926]/60 p-5 rounded-2xl border border-slate-800/80">
+                    <h3 class="text-sm font-bold text-cyan-400 mb-1.5"><i class="fa-solid fa-circle-question mr-2"></i> ¿Ofrecen soporte si tengo alguna duda?</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">¡Por supuesto! Contamos con soporte personalizado todos los días de la semana para ayudarte a configurar tus dispositivos o resolver cualquier duda técnica de inmediato.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Banner Inferior -->
-        <section class="mt-16 text-center border-t border-slate-800/60 pt-12 max-w-2xl mx-auto">
-           
+        <section class="mt-20 text-center border-t border-slate-800/60 pt-12 max-w-2xl mx-auto">
             <h2 class="text-2xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">ENTRETENIMIENTO SIN LÍMITES</h2>
             <p class="text-slate-500 text-xs font-bold tracking-[0.4em] mt-2">CALIDAD • VARIEDAD • CONFIANZA</p>
         </section>
@@ -195,6 +310,18 @@
     <footer class="p-6 text-center text-xs text-slate-600 bg-[#070a12] border-t border-slate-900 mt-12 relative z-10">
         <p>&copy; 2026 Vlix Streaming. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP (NUEVO) -->
+    <!-- Recuerda cambiar "52XXXXXXXXXX" por tu número real de WhatsApp con código de país -->
+    <a href="https://wa.me/525574430905?text=%C2%A1Hola%21+Vi+la+p%C3%A1gina+web+de+Vlyx+y+me+interesa+activar+mi+servicio+de+streaming.+%C2%BFMe+dan+m%C3%A1s+informaci%C3%B3n%3F" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="fixed bottom-6 right-6 z-50 bg-[#25d366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl shadow-green-500/30 flex items-center justify-center text-2xl transition-all duration-300 hover:scale-110 active:scale-95 group">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="absolute right-14 bg-[#131926] text-white text-[11px] font-bold px-3 py-1.5 rounded-xl border border-slate-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none shadow-xl">
+            ¡Escríbenos por WhatsApp!
+        </span>
+    </a>
 
 </body>
 </html>
